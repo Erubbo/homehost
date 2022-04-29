@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+</head>
+<body>
+    <div class="container">
+    <header>
+
+    </header>
+    <main>
+        <section class="content">
+            <article class="item">1</article>
+            <article class="item">2</article>
+            <article class="item">3</article>
+            <article class="item">4</article>
+        </section>
+
+        <style>
+            .content{
+                background-color: #e7eef5;
+                height: 500px;
+                width: 70%;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .item{
+                flex-grow: 1;
+                flex-shrink: 1;
+                flex-basis:auto;
+                height: 100px;
+                width: 100px;
+                color: black;
+                -webkit-box-shadow: 0px 2px 8px -1px rgba(0,0,0,0.24);
+                background: white;
+                margin: 5px;
+            }
+
+            .item:nth-child(1){
+                order: 4;
+
+            }
+
+            .item:nth-child(2){
+                background-color: brown;
+
+            }
+
+            .item:nth-child(3){
+                flex-grow: 4;
+
+            }
+
+            .item:nth-child(4){
+                flex-grow: 2;
+
+            }
+
+        </style>
+
+
+
+    </main>
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>

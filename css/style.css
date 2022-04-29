@@ -60,6 +60,79 @@ nav{
     color: #ccc;
 }
 
-/* .default-btn{
+.default-btn{
+    padding: 15px 20px;
+    background-color: #2cc76a;
+    border-radius: 5px;
+    color: #fff;
 
-} */
+}
+
+.default-btn:hover{
+    background-color: #22bb5f;
+    color: #fff;
+}
+
+.main-banner{
+    background-image: url("../img/mainbanner.png");
+    padding: 10em 0;    
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.main-banner p, .main-banner h1{
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.main-banner h1{
+    font-size: 54px;
+
+}
+
+.main-banner p{
+    font-size: 32px;
+}
+
+/* specialties */
+
+.specialties-container{
+    padding: 5em 0;
+
+}
+
+.specialties-container ul{
+    display: flex;
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    padding-left: 0;
+}
+
+.specialties-container ul li{
+    flex: 1 1 200px;
+    list-style: none;
+    text-align: center;
+    padding: 20px;
+
+}
+
+.fas{
+    font-size: 60px;
+    margin-bottom: 15px;
+
+}
+
+.fa-shield-alt{
+color: #2cc76a;
+}
+
+.fa-rocket{
+color: #ef3f29;
+}
+
+.fa-comments{
+    color: #f09029;
+}
