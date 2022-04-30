@@ -1,19 +1,22 @@
 /* General */
-body, textarea{
+body,
+textarea {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3{
+h1,
+h2,
+h3 {
     color: #333333;
 }
 
-p{
+p {
     color: #70747A;
 }
 
-.navbar-container{
+.navbar-container {
     background-color: #232A31;
     width: 100%;
     height: 80px;
@@ -23,16 +26,16 @@ p{
 
 }
 
-.logo{
+.logo {
     width: 50px;
     margin-top: 15px;
 }
 
-nav{
+nav {
     position: relative;
 }
 
-.navbar-itens{
+.navbar-itens {
     list-style: none;
     position: absolute;
     right: 0;
@@ -42,25 +45,25 @@ nav{
     line-height: 80px;
 }
 
-.navbar-itens li{
+.navbar-itens li {
     display: inline-block;
     text-transform: uppercase;
     margin-left: 25px;
 
 }
 
-.navbar-itens li a{
+.navbar-itens li a {
     color: white;
     text-decoration: none;
     transition: .5s;
 
 }
 
-.navbar-itens li a:hover{
+.navbar-itens li a:hover {
     color: #ccc;
 }
 
-.default-btn{
+.default-btn {
     padding: 15px 20px;
     background-color: #2cc76a;
     border-radius: 5px;
@@ -68,42 +71,43 @@ nav{
 
 }
 
-.default-btn:hover{
+.default-btn:hover {
     background-color: #22bb5f;
     color: #fff;
 }
 
-.main-banner{
+.main-banner {
     background-image: url("../img/mainbanner.png");
-    padding: 10em 0;    
+    padding: 10em 0;
     background-position: center;
     background-size: cover;
     position: relative;
 }
 
-.main-banner p, .main-banner h1{
+.main-banner p,
+.main-banner h1 {
     color: white;
     text-align: center;
     font-weight: bold;
 }
 
-.main-banner h1{
+.main-banner h1 {
     font-size: 54px;
 
 }
 
-.main-banner p{
+.main-banner p {
     font-size: 32px;
 }
 
 /* specialties */
 
-.specialties-container{
+.specialties-container {
     padding: 5em 0;
 
 }
 
-.specialties-container ul{
+.specialties-container ul {
     display: flex;
     width: 90%;
     position: relative;
@@ -111,7 +115,7 @@ nav{
     padding-left: 0;
 }
 
-.specialties-container ul li{
+.specialties-container ul li {
     flex: 1 1 200px;
     list-style: none;
     text-align: center;
@@ -119,20 +123,149 @@ nav{
 
 }
 
-.fas{
+.fas {
     font-size: 60px;
     margin-bottom: 15px;
 
 }
 
-.fa-shield-alt{
-color: #2cc76a;
+.fa-shield-alt {
+    color: #2cc76a;
 }
 
-.fa-rocket{
-color: #ef3f29;
+.fa-rocket {
+    color: #ef3f29;
 }
 
-.fa-comments{
+.fa-comments {
     color: #f09029;
+}
+
+.specialties-container ul li h3 {
+    margin-bottom: 25px;
+    color: #333
+}
+
+.specialties-container ul li p {
+    line-height: 24px;
+    color: #70747A;
+}
+
+/* preços */
+
+.pricing-container {
+    padding-bottom: 5em;
+    text-align: center;
+
+}
+
+.pricing-container h2 {
+    font-size: 36px;
+    margin-top: 0;
+}
+
+.pricing-container p {
+    font-size: 20px;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    /* margin-top: 50px; */
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin: 50px auto 0;
+}
+
+.plan {
+    flex: 1 1 200px;
+    max-width: 275px;
+    margin: 0 auto;
+}
+
+.plan ul {
+    list-style: none;
+    padding: 0;
+
+
+}
+
+.plan li {
+    height: 50px;
+    line-height: 50px;
+    background-color: #e8e9ea;
+    color: #333;
+}
+
+.plan .price {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #2cc76a;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    position: relative;
+    margin: 0 auto -50px;
+}
+
+.plan .plan-name {
+    text-transform: uppercase;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #202b34;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.plan .plan-btn {
+    background-color: #2cc76a;
+    color: #fff;
+    font-size: 24px;
+    height: 75px;
+    line-height: 75px;
+    cursor: pointer;
+}
+
+.plan .recommended{
+    background-color: red;
+}
+
+/* buscar domínio */
+
+.searchdomain-container{
+    text-align: center;
+    background-color: #34454e;
+    padding: 5em 0;
+
+}
+.searchdomain-container h2{
+    color: white;
+    font-size: 42px;
+    margin: 0 0 15px;
+}
+
+.searchdomain-container p {
+    color: #d5d5d5;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.searchdomain-container input {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.searchdomain-container input[type=text] {
+    margin: 0 0 25px;
+    padding: 20px;
+    width: 60%;
+    font-size: 20px;
 }
